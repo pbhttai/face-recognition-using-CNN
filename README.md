@@ -1,30 +1,58 @@
-# Face Recognition System using Deep Learning
+# 🧠 Face Recognition using MobileNetV2
 
-## 📌 Description
-This project identifies a person from an image using CNN and transfer learning.
+This project implements a **Face Recognition System** using **Transfer Learning** with MobileNetV2. The model is trained to classify different individuals based on facial features.
+
+---
+
+## 📌 Overview
+
+Face recognition is a computer vision task that identifies or verifies a person from an image.  
+In this project, we use a pre-trained deep learning model (**MobileNetV2**) and fine-tune it on a custom dataset.
+
+---
 
 ## 🚀 Features
-- Face detection (MTCNN)
-- Face recognition (MobileNetV2)
-- Trained on LFW dataset
 
-## 🛠️ Tech Stack
-- Python
-- TensorFlow / Keras
-- OpenCV
+- ✅ Transfer Learning using MobileNetV2  
+- ✅ Data Augmentation for better generalization  
+- ✅ Image preprocessing and normalization  
+- ✅ Multi-class face classification  
+- ✅ Model evaluation using accuracy and validation metrics  
 
-## 📂 Dataset
-LFW Dataset
+---
 
-## ▶️ Run
+
+---
+
+## 🧑‍💻 Technologies Used
+
+- Python  
+- TensorFlow / Keras  
+- OpenCV  
+- NumPy  
+- Matplotlib  
+
+---
+
+## 📊 Model Details
+
+- **Base Model:** MobileNetV2 (pre-trained on ImageNet)  
+- **Input Size:** 224 × 224  
+- **Optimizer:** Adam  
+- **Loss Function:** Categorical Crossentropy  
+- **Activation:** Softmax  
+
+---
+
+## 🔧 Installation
+
+1. Clone the repository:
 ```bash
-python src/train.py
-python src/predict.py
+git clone https://github.com/pbhttai/face-recognition-using-CNN.git
+cd face-recognition-using-CNN
 ```
 
-# 🔗 7. Connect to GitHub
-
-👉 Create repo on GitHub first, then:
-
+2. Install dependencies:
 ```bash
-git remote add origin https://github.com/your-username/face-recognition-project.git
+pip install -r requirements.txt
+```
